@@ -1,0 +1,23 @@
+<!--/**
+ * // Activity 3:keyboard events
+ task5:Add a keydown eventlistener to an input field thst logs the key pressed to the console.
+task6:Add a keyup eventlistener to an input field that displays the current value in a paragraph.
+ */-->
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+ </head>
+ <body>
+    <input type="text" id="myInput" placeholder="hey guys type something....">
+    <script>
+        const mytext = document.getElementById("myInput");
+        mytext.addEventListener('keydown', function(event){
+         console.log("event key:" + event.key);
+        })
+
+    </script>
+ </body>
+ </html>

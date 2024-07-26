@@ -1,0 +1,42 @@
+<!--//Activity 2:Mouse Event
+/**
+ * Add a mouseOver event listener to an element that changes its background color.
+ * task4:Add a mouseout eventListener to an element that resets its backgound color
+-->
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>mouseOver</title>
+    <style >
+      #myelement{
+         width: 300px;
+         height: 200px;
+         display: flex;
+         background-color: aqua;
+         text-align: center;
+         font-size: 20px;
+         align-items: center;
+         font-size: 20px;
+         justify-content: center;
+
+
+
+      }
+    </style>
+ </head>
+ <body>
+   <div id="myelement">Hover over me</div>
+   <script>
+      const element =  document.getElementById('myelement');
+      element.addEventListener('mouseover',function(){
+         element.style.backgroundColor = 'red';
+      });
+      element.addEventListener('mouseout',function(){
+         element.style.backgroundColor = 'yellow';
+      })
+   </script>
+    
+ </body>
+ </html>

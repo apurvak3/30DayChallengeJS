@@ -1,0 +1,44 @@
+<!--//Activity1: Basic
+/**
+ * task1:Add a click event listener to a button that changes the text content of a paragraph.
+ * task2: Add s double-click event listener yo an image that toggle its visibility. 
+ */
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>"The Tantric Curse"</title>
+</head>
+<body>
+    <img id="myimage" src="use.jpg" alt="use1.jpg" style="width: 300px ;height:auto; align-content: center;" >
+   
+    <p id="Curse">
+        
+        <br>"The Tantric Curse" by Anupama Garg is a novel that delves into the world of tantra, mysticism, and self-discovery. The story centers around a young girl named Rhea, who is drawn into the mystical and often misunderstood realm of tantra. Guided by her guru, Anu, Rhea embarks on a journey of spiritual awakening, self-discovery, and empowerment.
+
+    </p>
+    <button id="myButton">Click Me</button>
+    <script>
+        document.getElementById("myButton").addEventListener('click', function() {
+            const paragraph = document.getElementById("Curse");
+            paragraph.textContent = 'Anupama Garg\'s narrative combines elements of Indian mythology, spiritual practices, and contemporary life, offering readers a unique insight into the tantric tradition. "The Tantric Curse" is a story of transformation, highlighting the power of inner strength and the importance of embracing one\'s true self.';
+            
+        });
+        document.getElementById("myimage").addEventListener('dblclick',function() {
+        const image = document.getElementById("myimage");
+       if(image.src.endsWith('use.jpg')){
+         image.src = 'use1.jpg'
+        image.src = 'use2.jpg'
+
+       }else{
+        image.src ='use3.jpg'
+
+       }
+
+
+        })
+    </script>
+</body>
+</html>
